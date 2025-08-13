@@ -995,15 +995,15 @@ void PageMapping::getStatList(std::vector<Stats> &list, std::string prefix) {
 
   // Write Amplification Factor statistics
   temp.name = prefix + "page_mapping.wa.total";
-  temp.desc = "Internal WAF = device/host (IO-unit based)";
+  temp.desc = "Internal WAF (bytes) = device/host";
   list.push_back(temp);
 
   temp.name = prefix + "page_mapping.wa.user";
-  temp.desc = "User-only WAF = device_user/host";
+  temp.desc = "User-only WAF (bytes) = device_user/host";
   list.push_back(temp);
 
   temp.name = prefix + "page_mapping.wa.gc";
-  temp.desc = "GC-only WAF = device_gc/host";
+  temp.desc = "GC-only WAF (bytes) = device_gc/host";
   list.push_back(temp);
 }
 
